@@ -12,11 +12,12 @@
   },
   "license": "MIT",
   "author": "Anton Northern",
-  "main": "index.js",
+  "type": "module",
+  "exports": "./index.js",
+  "repository": "github:koshikishi/stylelint-config",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "github:koshikishi/stylelint-config",
   "dependencies": {
     "@stylistic/stylelint-plugin": "^2.0.0",
     "stylelint-config-standard-scss": "^13.0.0"
