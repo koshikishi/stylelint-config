@@ -1,0 +1,20 @@
+{
+  "name": "@koshikishi/stylelint-config",
+  "version": "0.1.0",
+  "description": "Stylelint shareable config",
+  "keywords": [
+    "stylelint",
+    "stylelint-config"
+  ],
+  "homepage": "https://github.com/koshikishi/stylelint-config#readme",
+  "bugs": {
+    "url": "https://github.com/koshikishi/stylelint-config/issues"
+  },
+  "license": "MIT",
+  "author": "Anton Northern",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "github:koshikishi/stylelint-config"
+}
