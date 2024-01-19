@@ -12,6 +12,9 @@
   },
   "license": "MIT",
   "author": "Anton Northern",
+  "files": [
+    "index.js"
+  ],
   "type": "module",
   "exports": "./index.js",
   "repository": "github:koshikishi/stylelint-config",
