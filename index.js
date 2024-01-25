@@ -145,6 +145,8 @@ export default {
 
       'scss/at-root-no-redundant': true,
 
+      'scss/at-use-no-redundant-alias': true,
+
       'scss/dollar-variable-colon-newline-after': 'always-multi-line',
       'scss/dollar-variable-colon-space-after': 'always-single-line',
       'scss/dollar-variable-first-in-block': [true, {
