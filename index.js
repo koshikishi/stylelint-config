@@ -141,6 +141,8 @@ export default {
 
       'scss/at-each-key-value-single-line': true,
 
+      'scss/at-import-partial-extension': 'always',
+
       'scss/at-mixin-argumentless-call-parentheses': 'always',
 
       'scss/at-root-no-redundant': true,
