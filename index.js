@@ -25,6 +25,7 @@ export default {
 
     'max-nesting-depth': [2, {
       ignore: ['blockless-at-rules', 'pseudo-classes'],
+      ignoreAtRules: ['media', 'include'],
     }],
     'number-max-precision': 2,
     'selector-max-id': 0,
@@ -140,10 +141,6 @@ export default {
       'property-no-unknown': null,
 
       'scss/at-each-key-value-single-line': true,
-
-      'scss/at-import-partial-extension': 'always',
-
-      'scss/at-mixin-argumentless-call-parentheses': 'always',
 
       'scss/at-root-no-redundant': true,
 
