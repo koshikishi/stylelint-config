@@ -38,8 +38,8 @@ export default {
       ignore: ['relative'],
     }],
     'import-notation': 'string',
-    'media-feature-range-notation': 'prefix',
-    'selector-not-notation': 'simple',
+    'media-feature-range-notation': null,
+    'selector-not-notation': null,
 
     'selector-class-pattern': '^[a-z0-9-_]+$',
 
@@ -140,19 +140,11 @@ export default {
       'media-feature-name-value-no-unknown': null,
       'property-no-unknown': null,
 
-      'scss/at-each-key-value-single-line': true,
-
-      'scss/at-root-no-redundant': true,
-
-      'scss/at-use-no-redundant-alias': true,
-
       'scss/dollar-variable-colon-newline-after': 'always-multi-line',
       'scss/dollar-variable-colon-space-after': 'always-single-line',
       'scss/dollar-variable-first-in-block': [true, {
         ignore: ['comments', 'imports'],
       }],
-
-      'scss/declaration-nested-properties': 'never',
 
       'scss/dimension-no-non-numeric-values': true,
 
@@ -161,11 +153,6 @@ export default {
       'scss/property-no-unknown': true,
 
       'scss/selector-no-redundant-nesting-selector': true,
-
-      'scss/no-duplicate-dollar-variables': [true, {
-        ignoreInside: ['at-rule'],
-        ignoreInsideAtRules: ['mixin', 'function', 'if', 'each', 'for', 'while'],
-      }],
     },
   }],
 };
