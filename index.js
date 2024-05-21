@@ -55,6 +55,8 @@ export default {
     '@stylistic/function-parentheses-space-inside': 'never-single-line',
     '@stylistic/function-whitespace-after': 'always',
 
+    '@stylistic/named-grid-areas-alignment': true,
+
     '@stylistic/number-leading-zero': 'always',
     '@stylistic/number-no-trailing-zeros': true,
 
