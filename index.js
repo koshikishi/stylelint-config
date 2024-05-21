@@ -143,7 +143,6 @@ export default {
       'property-no-unknown': null,
 
       'scss/dollar-variable-colon-newline-after': 'always-multi-line',
-      'scss/dollar-variable-colon-space-after': 'always-single-line',
       'scss/dollar-variable-first-in-block': [true, {
         ignore: ['comments', 'imports'],
       }],
