@@ -6,9 +6,6 @@ export default {
   rules: {
     'no-descending-specificity': null,
 
-    'declaration-property-value-no-unknown': true,
-    'media-feature-name-value-no-unknown': true,
-
     'color-hex-alpha': 'never',
     'color-named': 'never',
 
@@ -54,8 +51,6 @@ export default {
     '@stylistic/function-max-empty-lines': 0,
     '@stylistic/function-parentheses-space-inside': 'never-single-line',
     '@stylistic/function-whitespace-after': 'always',
-
-    '@stylistic/named-grid-areas-alignment': true,
 
     '@stylistic/number-leading-zero': 'always',
     '@stylistic/number-no-trailing-zeros': true,
@@ -127,6 +122,8 @@ export default {
     '@stylistic/at-rule-name-space-after': 'always',
     '@stylistic/at-rule-semicolon-newline-after': 'always',
 
+    '@stylistic/named-grid-areas-alignment': true,
+
     '@stylistic/indentation': 2,
     '@stylistic/max-empty-lines': 1,
     '@stylistic/no-eol-whitespace': true,
@@ -138,8 +135,6 @@ export default {
     extends: 'stylelint-config-standard-scss',
     customSyntax: postcssScss,
     rules: {
-      'declaration-property-value-no-unknown': null,
-      'media-feature-name-value-no-unknown': null,
       'property-no-unknown': null,
 
       'scss/dollar-variable-colon-newline-after': 'always-multi-line',
