@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.0.0] - 2025-07-01
+
+### Changed
+
+- **Breaking change:** bumped the minimum supported Node.js version to >=20.0.
+- Extended the defaults of `length-zero-no-unit` rule in `stylelint-config-standard-scss` to ignore units for zero lengths in `var()` and custom functions.
+- Removed `declaration-property-value-no-unknown` and `media-feature-name-value-no-unknown` rules from the config as they match the defaults in `stylelint-config-recommended` and `stylelint-config-recommended-scss`.
+- Updated dependencies.
+
 ## [3.1.0] - 2024-05-21
 
 ### Added
@@ -56,7 +65,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Basic project configuration files.
 - Stylelint configuration file for CSS and SCSS syntaxes.
 
-[3.1.0]: https://github.com/koshikishi/stylelint-config/compare/v3.0.0...HEAD
+[4.0.0]: https://github.com/koshikishi/stylelint-config/compare/v3.1.0...HEAD
+[3.1.0]: https://github.com/koshikishi/stylelint-config/compare/v3.0.0...v3.1.0
 [3.0.0]: https://github.com/koshikishi/stylelint-config/compare/v2.0.0...v3.0.0
 [2.0.0]: https://github.com/koshikishi/stylelint-config/compare/v1.0.1...v2.0.0
 [1.0.1]: https://github.com/koshikishi/stylelint-config/compare/v1.0.0...v1.0.1
