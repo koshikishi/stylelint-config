@@ -137,6 +137,12 @@ export default {
     rules: {
       'property-no-unknown': null,
 
+      'length-zero-no-unit': [true, {
+        ignore: ['custom-properties'],
+        ignoreFunctions: ['var', '/^--/'],
+        ignorePreludeOfAtRules: ['function', 'mixin'],
+      }],
+
       'scss/dollar-variable-colon-newline-after': 'always-multi-line',
       'scss/dollar-variable-first-in-block': [true, {
         ignore: ['comments', 'imports'],
