@@ -6,6 +6,10 @@ export default {
 
     'no-descending-specificity': null,
 
+    'font-family-no-duplicate-names': [true, {
+      ignoreFontFamilyNames: ['monospace'],
+    }],
+
     'selector-no-invalid': true,
 
     'no-unknown-custom-media': true,
@@ -13,15 +17,13 @@ export default {
     'color-hex-alpha': 'never',
     'color-named': 'never',
 
-    'declaration-no-important': true,
+    'declaration-no-important': [true, {
+      severity: 'warning',
+    }],
 
     'length-zero-no-unit': [true, {
       ignore: ['custom-properties'],
       ignoreFunctions: ['var', '/^--/'],
-    }],
-
-    'value-keyword-case': ['lower', {
-      camelCaseSvgKeywords: true,
     }],
 
     'declaration-block-single-line-max-declarations': 0,
@@ -39,16 +41,13 @@ export default {
     'time-min-milliseconds': 100,
 
     'alpha-value-notation': 'number',
-    'color-function-notation': null,
     'color-hex-length': 'long',
     'font-weight-notation': ['numeric', {
       ignore: ['relative'],
     }],
     'import-notation': 'string',
-    'media-feature-range-notation': null,
-    'selector-not-notation': null,
 
-    'selector-class-pattern': '^[a-z0-9-_]+$',
+    'selector-class-pattern': '^([a-z][a-z0-9]*)(-[a-z0-9]+)*(__[a-z][a-z0-9]*(-[a-z0-9]+)*)?(--[a-z][a-z0-9]*(-[a-z0-9]+)*)?$',
     'selector-nested-pattern': '&',
 
     'font-family-name-quotes': 'always-unless-keyword',
@@ -156,6 +155,8 @@ export default {
         ignorePreludeOfAtRules: ['function', 'mixin'],
       }],
 
+      'selector-class-pattern': null,
+
       'scss/dollar-variable-colon-newline-after': 'always-multi-line',
       'scss/dollar-variable-first-in-block': [true, {
         ignore: ['comments', 'imports'],
@@ -167,6 +168,9 @@ export default {
 
       'scss/property-no-unknown': true,
 
+      'scss/selector-class-pattern': ['^([a-z][a-z0-9]*)(-[a-z0-9]+)*(__[a-z][a-z0-9]*(-[a-z0-9]+)*)?(--[a-z][a-z0-9]*(-[a-z0-9]+)*)?$', {
+        resolveNestedSelectors: true,
+      }],
       'scss/selector-no-redundant-nesting-selector': true,
     },
   }],
