@@ -8,6 +8,13 @@ The Stylelint shareable config designed for my personal projects.
 
 Use it as is or as a foundation for your own configuration file.
 
+## Prerequisites
+
+This package requires:
+
+- Node.js >= 24
+- Stylelint >= 17
+
 ## Installation
 
 Install the package and `stylelint` in your project:
@@ -29,45 +36,45 @@ These are direct dependencies that will be installed automatically.
 
 Set your `stylelint` config to:
 
-```json
-{
-  "extends": "@koshikishi/stylelint-config"
-}
+```js
+export default {
+  extends: '@koshikishi/stylelint-config',
+};
 ```
 
 ### Extending the config
 
-Add a `"rules"` key to your config, then add your overrides and additions there.
+Add a `rules` key to your config, then add your overrides and additions there.
 
-For example, to add the `color-function-notation` rule and turn off the `selector-class-pattern` rule:
+For example, to add the `function-no-unknown` rule and turn off the `selector-class-pattern` rule:
 
-```json
-{
-  "extends": "@koshikishi/stylelint-config",
-  "rules": {
-    "color-function-notation": "modern",
-    "selector-class-pattern": null
-  }
-}
+```js
+export default {
+  extends: '@koshikishi/stylelint-config',
+  rules: {
+    'function-no-unknown': true,
+    'selector-class-pattern': null,
+  },
+};
 ```
 
 You can also override the stylistic rules from `@stylistic/stylelint-plugin` and SCSS-specific rules:
 
-```json
-{
-  "extends": "@koshikishi/stylelint-config",
-  "rules": {
-    "@stylistic/indentation": 4,
-    "scss/declaration-nested-properties": null
-  }
-}
+```js
+export default {
+  extends: '@koshikishi/stylelint-config',
+  rules: {
+    '@stylistic/indentation': 4,
+    'scss/dimension-no-non-numeric-values': null,
+  },
+};
 ```
 
 ## Integration with VS Code
 
 1. Install the Stylelint [extension](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) for VS Code.
 2. Install `stylelint` and this config in your project following the [Installation](#installation) section.
-3. Add a Stylelint configuration file (`stylelint.config.js` or `.stylelintrc.*`) and extend it with this shareable config following the [Usage](#usage) section.
+3. Add a Stylelint configuration file (`stylelint.config.js`) and extend it with this shareable config following the [Usage](#usage) section.
 
 ## Useful links
 
