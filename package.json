@@ -33,7 +33,7 @@
     "stylelint-config-standard-scss": "^17.0.0"
   },
   "devDependencies": {
-    "@koshikishi/eslint-config": "^5.0.0",
+    "@koshikishi/eslint-config": "^5.1.0",
     "editorconfig-checker": "^6.1.1",
     "eslint": "^10.4.1",
     "globals": "^17.6.0",
