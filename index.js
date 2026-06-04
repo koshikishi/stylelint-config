@@ -1,10 +1,14 @@
-import postcssScss from 'postcss-scss';
-
 export default {
   extends: 'stylelint-config-standard',
   plugins: ['@stylistic/stylelint-plugin'],
   rules: {
+    'selector-no-deprecated': true,
+
     'no-descending-specificity': null,
+
+    'selector-no-invalid': true,
+
+    'no-unknown-custom-media': true,
 
     'color-hex-alpha': 'never',
     'color-named': 'never',
@@ -20,13 +24,19 @@ export default {
       camelCaseSvgKeywords: true,
     }],
 
+    'declaration-block-single-line-max-declarations': 0,
     'max-nesting-depth': [2, {
       ignore: ['blockless-at-rules', 'pseudo-classes'],
       ignoreAtRules: ['media', 'include'],
     }],
     'number-max-precision': 2,
+    'selector-max-class': 2,
+    'selector-max-combinators': 2,
+    'selector-max-compound-selectors': 2,
     'selector-max-id': 0,
+    'selector-max-type': 2,
     'selector-max-universal': 2,
+    'time-min-milliseconds': 100,
 
     'alpha-value-notation': 'number',
     'color-function-notation': null,
@@ -39,6 +49,7 @@ export default {
     'selector-not-notation': null,
 
     'selector-class-pattern': '^[a-z0-9-_]+$',
+    'selector-nested-pattern': '&',
 
     'font-family-name-quotes': 'always-unless-keyword',
 
@@ -133,8 +144,10 @@ export default {
   overrides: [{
     files: ['**/*.scss'],
     extends: 'stylelint-config-standard-scss',
-    customSyntax: postcssScss,
+    customSyntax: 'postcss-scss',
     rules: {
+      'selector-no-invalid': null,
+
       'property-no-unknown': null,
 
       'length-zero-no-unit': [true, {
