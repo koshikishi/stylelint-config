@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [5.0.1] - 2026-06-04
+
+### Changed
+
+- Updated linter configuration file.
+- Updated dependencies.
+
 ## [5.0.0] - 2026-06-04
 
 ### Added
@@ -96,7 +103,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Basic project configuration files.
 - Stylelint configuration file for CSS and SCSS syntaxes.
 
-[5.0.0]: https://github.com/koshikishi/stylelint-config/compare/v4.0.0...HEAD
+[5.0.1]: https://github.com/koshikishi/stylelint-config/compare/v5.0.0...HEAD
+[5.0.0]: https://github.com/koshikishi/stylelint-config/compare/v4.0.0...v5.0.0
 [4.0.0]: https://github.com/koshikishi/stylelint-config/compare/v3.1.0...v4.0.0
 [3.1.0]: https://github.com/koshikishi/stylelint-config/compare/v3.0.0...v3.1.0
 [3.0.0]: https://github.com/koshikishi/stylelint-config/compare/v2.0.0...v3.0.0
