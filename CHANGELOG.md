@@ -5,6 +5,37 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [5.0.0] - 2026-06-04
+
+### Added
+
+- `selector-no-deprecated` rule to disallow deprecated selectors.
+- `selector-no-invalid` rule to disallow invalid selectors (only for CSS).
+- `no-unknown-custom-media` rule to disallow unknown custom media queries.
+- `declaration-block-single-line-max-declarations` rule to disallow single-line declaration blocks.
+- `selector-max-class` rule to limit the number of classes in a selector.
+- `selector-max-combinators` rule to limit the number of combinators in a selector.
+- `selector-max-compound-selectors` rule to limit the number of compound selectors in a selector.
+- `selector-max-type` rule to limit the number of type selectors in a selector.
+- `time-min-milliseconds` rule to limit the minimum number of milliseconds for time values.
+- `selector-nested-pattern` rule to require nested selectors to reference the parent using `&`.
+
+### Changed
+
+- **Breaking changes:**
+  - Bumped the minimum supported Node.js version to >=24.0.
+  - Bumped the required Stylelint version to >= 17.0.
+- `font-family-no-duplicate-names` rule to ignore the `monospace` keyword, allowing the `font-family: monospace, monospace;` pattern.
+- `declaration-no-important` rule to lower the severity level to a warning.
+- `value-keyword-case` rule to no longer exempt the SVG keywords.
+- `color-function-notation` rule to require modern notation for color-functions.
+- `media-feature-range-notation` rule to require context notation for media feature ranges.
+- `selector-not-notation` rule to require complex notation for `:not()` pseudo-class selectors.
+- `selector-class-pattern` rule to enforce the strict BEM `block__element--modifier` pattern for class selectors.
+- Removed `value-keyword-case`, `color-function-notation`, `media-feature-range-notation`, and `selector-not-notation` rules from the config as they now match the defaults in `stylelint-config-standard`.
+- Updated README.md and LICENSE.
+- Updated dependencies.
+
 ## [4.0.0] - 2025-07-01
 
 ### Changed
@@ -65,7 +96,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Basic project configuration files.
 - Stylelint configuration file for CSS and SCSS syntaxes.
 
-[4.0.0]: https://github.com/koshikishi/stylelint-config/compare/v3.1.0...HEAD
+[5.0.0]: https://github.com/koshikishi/stylelint-config/compare/v4.0.0...HEAD
+[4.0.0]: https://github.com/koshikishi/stylelint-config/compare/v3.1.0...v4.0.0
 [3.1.0]: https://github.com/koshikishi/stylelint-config/compare/v3.0.0...v3.1.0
 [3.0.0]: https://github.com/koshikishi/stylelint-config/compare/v2.0.0...v3.0.0
 [2.0.0]: https://github.com/koshikishi/stylelint-config/compare/v1.0.1...v2.0.0
