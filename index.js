@@ -156,6 +156,7 @@ export default {
       }],
 
       'selector-class-pattern': null,
+      'selector-nested-pattern': null,
 
       'scss/dollar-variable-colon-newline-after': 'always-multi-line',
       'scss/dollar-variable-first-in-block': [true, {
